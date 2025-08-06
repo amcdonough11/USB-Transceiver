@@ -1,17 +1,14 @@
 
 
 ## Project Description:
-A modified version of USB 1.1, utilizing a transmitter, a reciever, AHB lite bus and a 64 bytes data buffer.<br/>
+A modified version of USB 1.1, utilizing a transmitter, a receiver, AHB lite bus, and a 64 bytes data buffer.<br/>
 ![TopLevelRTL](/images/Top_Level_RTL.png/)
 
-## Contribuition:
-Design by [Purdue University Elmore Family School of Electrical and Computer Engineering](https://engineering.purdue.edu/ECE) undergraduates
+## Contribution:
 + [Khoi Anh Nguyen](https://github.com/K0iNguyen)
 + [Aidan Michael McDonough](https://github.com/amcdonough11)
 + [Moe Wai Yan Myint](https://github.com/mwym2003)
 
-## Getting Started:
-Server source files for this project can be found in ~/337mg054/CDL (internal use only)
 ### + RTL Files:
 The main components making the top level are [usb_tx_wrapper.sv](/source/usb_tx_wrapper.sv), [usb_rx.sv](/source/usb_rx.sv), [data_buffer.sv](/source/data_buffer.sv), and [ahb_lite_satellite.sv](/source/ahb_lite_satellite.sv).</br>
 Submodules System Verilog files can be found in [/source/](/source/) folder.
