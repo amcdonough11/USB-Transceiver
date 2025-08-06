@@ -1,0 +1,122 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : usb_tx_wrapper
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:21:06 2025
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: fsm/state_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: TX_transfer_active
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  fsm/state_reg[0]/CLK (DFFSR)             0.00       0.00 r
+  fsm/state_reg[0]/Q (DFFSR)               0.68       0.68 f
+  fsm/U135/Y (NOR2X1)                      0.16       0.84 r
+  fsm/U134/Y (INVX1)                       0.26       1.09 f
+  fsm/U125/Y (NOR2X1)                      0.21       1.31 r
+  fsm/U114/Y (NAND2X1)                     0.37       1.68 f
+  fsm/U113/Y (NAND2X1)                     0.21       1.88 r
+  fsm/U112/Y (NOR2X1)                      0.14       2.03 f
+  fsm/U111/Y (NAND3X1)                     0.12       2.15 r
+  fsm/U110/Y (INVX1)                       0.18       2.33 f
+  fsm/U109/Y (NAND3X1)                     0.17       2.50 r
+  fsm/U10/Y (NOR2X1)                       0.20       2.70 f
+  fsm/U8/Y (NAND3X1)                       0.14       2.84 r
+  fsm/tx_transfer_active (usb_tx_fsm)      0.00       2.84 r
+  TX_transfer_active (out)                 0.00       2.84 r
+  data arrival time                                   2.84
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : usb_tx_wrapper
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:21:06 2025
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+Number of ports:                          144
+Number of nets:                           498
+Number of cells:                          382
+Number of combinational cells:            312
+Number of sequential cells:                29
+Number of macros/black boxes:               0
+Number of buf/inv:                         80
+Number of references:                      10
+
+Combinational area:              75888.000000
+Buf/Inv area:                    11520.000000
+Noncombinational area:           45936.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                121824.000000
+Total area:                 undefined
+1
+Loading db file '/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : usb_tx_wrapper
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:21:07 2025
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+usb_tx_wrapper                            5.719   10.663   36.903   16.383 100.0
+  fsm (usb_tx_fsm)                        1.560    4.070   18.372    5.631  34.4
+    bit8sr (flex_sr_SIZE8_MSB_FIRST1)     0.359    2.076    6.672    2.435  14.9
+  encoder (nrzi_encoder)                  2.598    3.436    1.261    6.034  36.8
+  divider (clk_div)                       0.321    1.614   10.906    1.935  11.8
+    counter3 (flex_counter_SIZE3)         0.000    0.409    4.153    0.409   2.5
+    counter8 (flex_counter_SIZE4_0)       0.124    0.644    5.565    0.769   4.7
+  bit_counter (flex_counter_SIZE4_1)      0.253    0.736    5.565    0.989   6.0
+1

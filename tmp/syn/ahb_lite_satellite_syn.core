@@ -1,0 +1,15 @@
+CAPI=2:
+name: "u337mg054:ece337:ahb_lite_satellite_syn"
+
+filesets:
+    netlist:
+        files:
+            - "ahb_lite_satellite.v"
+        file_type: systemVerilogSource
+
+targets:
+    default:
+        filesets:
+            - netlist
+        toplevel: ahb_lite_satellite
+

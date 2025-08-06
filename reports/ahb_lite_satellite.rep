@@ -1,0 +1,111 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ahb_lite_satellite
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:21:29 2025
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: last_haddr_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: hrdata[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  last_haddr_reg[0]/CLK (DFFSR)            0.00       0.00 r
+  last_haddr_reg[0]/Q (DFFSR)              0.57       0.57 r
+  U1073/Y (INVX1)                          0.64       1.21 f
+  U1058/Y (NAND2X1)                        0.40       1.61 r
+  U1057/Y (NOR2X1)                         0.97       2.57 f
+  U1003/Y (NAND2X1)                        0.38       2.96 r
+  U975/Y (INVX1)                           0.21       3.17 f
+  U974/Y (AOI21X1)                         0.11       3.27 r
+  U973/Y (OAI21X1)                         0.13       3.41 f
+  U972/Y (NAND2X1)                         0.51       3.91 r
+  U951/Y (NOR2X1)                          0.14       4.06 f
+  hrdata[31] (out)                         0.00       4.06 f
+  data arrival time                                   4.06
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : ahb_lite_satellite
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:21:29 2025
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+Number of ports:                          129
+Number of nets:                           724
+Number of cells:                          655
+Number of combinational cells:            501
+Number of sequential cells:                77
+Number of macros/black boxes:               0
+Number of buf/inv:                        140
+Number of references:                      14
+
+Combinational area:             123084.000000
+Buf/Inv area:                    20160.000000
+Noncombinational area:          121968.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                245052.000000
+Total area:                 undefined
+1
+Loading db file '/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : ahb_lite_satellite
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:21:29 2025
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ahb_lite_satellite                        7.840   17.239   73.851   25.079 100.0
+1

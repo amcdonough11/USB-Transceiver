@@ -1,0 +1,157 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ahb_usb
+Version: W-2024.09-SP4
+Date   : Fri May  2 15:03:19 2025
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: DB/rcounter/count_out_reg[0]
+              (rising edge-triggered flip-flop)
+  Endpoint: hrdata[6] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  DB/rcounter/count_out_reg[0]/CLK (DFFSR)                0.00       0.00 r
+  DB/rcounter/count_out_reg[0]/Q (DFFSR)                  0.73       0.73 r
+  DB/rcounter/count_out[0] (flex_counter_SIZE7_1)         0.00       0.73 r
+  DB/sub_136/B[0] (data_buffer_DW01_sub_0)                0.00       0.73 r
+  DB/sub_136/U3/Y (INVX2)                                 0.18       0.91 f
+  DB/sub_136/U1/Y (OR2X1)                                 0.31       1.22 f
+  DB/sub_136/U2_1/YC (FAX1)                               0.45       1.67 f
+  DB/sub_136/U2_2/YC (FAX1)                               0.45       2.12 f
+  DB/sub_136/U2_3/YC (FAX1)                               0.45       2.58 f
+  DB/sub_136/U2_4/YC (FAX1)                               0.45       3.03 f
+  DB/sub_136/U2_5/YC (FAX1)                               0.45       3.49 f
+  DB/sub_136/U2_6/YS (FAX1)                               0.54       4.02 f
+  DB/sub_136/DIFF[6] (data_buffer_DW01_sub_0)             0.00       4.02 f
+  DB/buffer_occupancy[6] (data_buffer)                    0.00       4.02 f
+  AHB/buffer_occupancy[6] (ahb_lite_satellite)            0.00       4.02 f
+  AHB/U403/Y (AOI22X1)                                    0.16       4.18 r
+  AHB/U402/Y (OAI21X1)                                    0.09       4.27 f
+  AHB/U401/Y (AND2X1)                                     0.19       4.47 f
+  AHB/hrdata[6] (ahb_lite_satellite)                      0.00       4.47 f
+  hrdata[6] (out)                                         0.00       4.47 f
+  data arrival time                                                  4.47
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : ahb_usb
+Version: W-2024.09-SP4
+Date   : Fri May  2 15:03:19 2025
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+Number of ports:                         1367
+Number of nets:                          7162
+Number of cells:                         5892
+Number of combinational cells:           4379
+Number of sequential cells:               725
+Number of macros/black boxes:               0
+Number of buf/inv:                       1191
+Number of references:                       4
+
+Combinational area:            1162170.000000
+Buf/Inv area:                   186624.000000
+Noncombinational area:         1148400.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               2310570.000000
+Total area:                 undefined
+1
+Loading db file '/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : ahb_usb
+Version: W-2024.09-SP4
+Date   : Fri May  2 15:03:20 2025
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ahb_usb                                  56.955  109.604  709.718  166.559 100.0
+  RX (usb_rx)                             5.166   10.677   87.116   15.843   9.5
+    DIV_COUNT (flex_counter_SIZE8)        0.526    1.128   11.533    1.654   1.0
+      add_26_aco (flex_counter_SIZE8_DW01_inc_0_DW01_inc_8)
+                                          0.000    0.000    1.807 1.81e-06   0.0
+    FOUR_clk (flex_counter_SIZE3_2)    5.80e-03    0.416    4.153    0.422   0.3
+    BYTE_COUNTS (flex_counter_SIZE4_2) 1.99e-03    0.513    5.565    0.515   0.3
+    STP8 (flex_sr)                     1.06e-02    1.171    6.672    1.181   0.7
+    RX_CONTROLLER (rx_controller)      3.03e-02    0.644   19.712    0.675   0.4
+    BUFF (data_reg)                       1.716    3.678   20.622    5.393   3.2
+    NRZI (NRZI_decoder)                4.58e-03    0.138    0.905    0.143   0.1
+    TWLV_MHZ (clk_div_rx)                 0.637    1.335   11.449    1.972   1.2
+      counter3 (flex_counter_SIZE3_0)  1.66e-03    0.410    4.153    0.412   0.2
+      counter8 (flex_counter_SIZE4_0)  1.99e-03    0.513    5.565    0.515   0.3
+    EOP (EOP_det)                      3.14e-03    0.439    3.565    0.442   0.3
+    DMIN (sync_RST_VAL0)               6.23e-03    0.430    1.066    0.436   0.3
+    DPIN (sync_RST_VAL1)               1.20e-02    0.477    1.066    0.489   0.3
+  TX (usb_tx_wrapper)                     1.424    5.518   37.489    6.943   4.2
+    fsm (usb_tx_fsm)                      0.218    2.997   18.664    3.214   1.9
+      bit8sr (flex_sr_MSB_FIRST1)         0.217    2.219    6.672    2.436   1.5
+    encoder (nrzi_encoder)                0.000    0.000    1.261 1.26e-06   0.0
+    divider (clk_div)                     0.579    1.649   10.967    2.229   1.3
+      counter3 (flex_counter_SIZE3_1)     0.000    0.622    4.153    0.622   0.4
+      counter8 (flex_counter_SIZE4_1)     0.000    0.777    5.565    0.777   0.5
+    bit_counter (flex_counter_SIZE4_3)    0.000    0.777    5.565    0.777   0.5
+  DB (data_buffer)                       40.133   74.772  511.177  114.906  69.0
+    sub_136 (data_buffer_DW01_sub_0)      0.000    0.000    2.686 2.69e-06   0.0
+    buff_counter (flex_counter_SIZE7_0)
+                                       1.79e-03    0.821   10.037    0.822   0.5
+      add_26_aco (flex_counter_SIZE7_0_DW01_inc_0_DW01_inc_9)
+                                          0.000    0.000    1.541 1.54e-06   0.0
+    rcounter (flex_counter_SIZE7_1)       0.000    0.819   10.037    0.819   0.5
+      add_26_aco (flex_counter_SIZE7_1_DW01_inc_0_DW01_inc_10)
+                                          0.000    0.000    1.541 1.54e-06   0.0
+    dataregs (bit8x64_data_reg)          40.128   72.104  426.052  112.232  67.4
+    wcounter (flex_counter_SIZE7_2)    1.79e-03    0.821   10.068    0.822   0.5
+      add_26_aco (flex_counter_SIZE7_2_DW01_inc_0_DW01_inc_11)
+                                          0.000    0.000    1.541 1.54e-06   0.0
+  AHB (ahb_lite_satellite)               10.232   18.636   73.938   28.868  17.3
+1

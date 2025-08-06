@@ -1,0 +1,131 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : usb_rx
+Version: W-2024.09-SP4
+Date   : Fri May  2 02:30:30 2025
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: RX_CONTROLLER/state_reg[3]
+              (rising edge-triggered flip-flop)
+  Endpoint: RX_transfer_active
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  RX_CONTROLLER/state_reg[3]/CLK (DFFSR)                  0.00       0.00 r
+  RX_CONTROLLER/state_reg[3]/Q (DFFSR)                    0.52       0.52 f
+  RX_CONTROLLER/U282/Y (INVX1)                            0.24       0.76 r
+  RX_CONTROLLER/U270/Y (NOR2X1)                           0.39       1.15 f
+  RX_CONTROLLER/U249/Y (NAND3X1)                          0.41       1.56 r
+  RX_CONTROLLER/U214/Y (NOR2X1)                           0.95       2.51 f
+  RX_CONTROLLER/U211/Y (NOR2X1)                           0.09       2.60 r
+  RX_CONTROLLER/U210/Y (NAND3X1)                          0.07       2.67 f
+  RX_CONTROLLER/U207/Y (NOR2X1)                           0.14       2.81 r
+  RX_CONTROLLER/U206/Y (NAND3X1)                          0.07       2.89 f
+  RX_CONTROLLER/U205/Y (OR2X1)                            0.40       3.29 f
+  RX_CONTROLLER/U204/Y (OAI21X1)                          0.21       3.50 r
+  RX_CONTROLLER/U203/Y (NOR3X1)                           0.20       3.70 f
+  RX_CONTROLLER/U15/Y (NAND2X1)                           0.10       3.81 r
+  RX_CONTROLLER/rx_busy (rx_controller)                   0.00       3.81 r
+  RX_transfer_active (out)                                0.00       3.81 r
+  data arrival time                                                  3.81
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : usb_rx
+Version: W-2024.09-SP4
+Date   : Fri May  2 02:30:30 2025
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+Number of ports:                          242
+Number of nets:                          1022
+Number of cells:                          826
+Number of combinational cells:            637
+Number of sequential cells:                81
+Number of macros/black boxes:               0
+Number of buf/inv:                        178
+Number of references:                      14
+
+Combinational area:             156834.000000
+Buf/Inv area:                    25632.000000
+Noncombinational area:          128304.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                285138.000000
+Total area:                 undefined
+1
+Loading db file '/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : usb_rx
+Version: W-2024.09-SP4
+Date   : Fri May  2 02:30:30 2025
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+usb_rx                                    1.810    9.991   86.783   11.801 100.0
+  DIV_COUNT (flex_counter_SIZE8)          0.000    0.921   11.472    0.921   7.8
+    add_26_aco (flex_counter_SIZE8_DW01_inc_0_DW01_inc_8)
+                                          0.000    0.000    1.807 1.81e-06   0.0
+  FOUR_clk (flex_counter_SIZE3_1)      7.76e-03    0.420    4.153    0.427   3.6
+  BYTE_COUNTS (flex_counter_SIZE4_1)   2.28e-03    0.513    5.565    0.516   4.4
+  STP8 (flex_sr)                       1.09e-02    1.173    6.672    1.184  10.0
+  RX_CONTROLLER (rx_controller)           1.757    1.516   19.918    3.272  27.7
+  BUFF (data_reg)                         0.000    2.764   20.399    2.764  23.4
+  NRZI (NRZI_decoder)                  6.91e-03    0.139    0.905    0.146   1.2
+  TWLV_MHZ (clk_div_rx)                3.65e-03    1.128   11.387    1.132   9.6
+    counter3 (flex_counter_SIZE3_0)    1.66e-03    0.410    4.153    0.412   3.5
+    counter8 (flex_counter_SIZE4_0)    1.99e-03    0.513    5.565    0.515   4.4
+  EOP (EOP_det)                        3.14e-03    0.439    3.565    0.442   3.7
+  DMIN (sync_RST_VAL0)                 6.29e-03    0.412    1.066    0.418   3.5
+  DPIN (sync_RST_VAL1)                 1.23e-02    0.464    1.066    0.476   4.0
+1

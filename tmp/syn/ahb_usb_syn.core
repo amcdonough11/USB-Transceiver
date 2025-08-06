@@ -1,0 +1,15 @@
+CAPI=2:
+name: "u337mg054:ece337:ahb_usb_syn"
+
+filesets:
+    netlist:
+        files:
+            - "ahb_usb.v"
+        file_type: systemVerilogSource
+
+targets:
+    default:
+        filesets:
+            - netlist
+        toplevel: ahb_usb
+

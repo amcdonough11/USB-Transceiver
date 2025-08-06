@@ -1,0 +1,172 @@
+Reading pref.tclError: tag "Error" isn't defined in text widget
+
+//  Questa Sim-64
+//  Version 2021.4 linux_x86_64 Oct 13 2021
+//
+//  Copyright 1991-2021 Mentor Graphics Corporation
+//  All Rights Reserved.
+//
+//  QuestaSim and its associated documentation contain trade
+//  secrets and commercial or financial information that are the property of
+//  Mentor Graphics Corporation and are privileged, confidential,
+//  and exempt from disclosure under the Freedom of Information Act,
+//  5 U.S.C. Section 552. Furthermore, this information
+//  is prohibited from disclosure under the Trade Secrets Act,
+//  18 U.S.C. Section 1905.
+//
+vsim -gui -vopt -voptargs="+acc" -t ps -do "waves/ahb_usb.do" -do "set PrefSource(OpenOnFinish) 0 ; set PrefMain(LinePrefix) "" ; set PrefMain(colorizeTranscript) 1" -onfinish stop -coverage tb_ahb_usb 
+Start time: 15:03:49 on May 02,2025
+** Note: (vsim-3812) Design is being optimized...
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(4964): (vopt-2685) [TFMPC] - Too few port connections for 'wcounter'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(4964): (vopt-2718) [TFMPC] - Missing connection for port 'rollover_flag'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(5134): (vopt-2685) [TFMPC] - Too few port connections for 'rcounter'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(5134): (vopt-2718) [TFMPC] - Missing connection for port 'rollover_flag'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(5137): (vopt-2685) [TFMPC] - Too few port connections for 'buff_counter'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(5137): (vopt-2718) [TFMPC] - Missing connection for port 'rollover_flag'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(5140): (vopt-2685) [TFMPC] - Too few port connections for 'sub_136'.  Expected 5, found 4.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(5140): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6275): (vopt-2685) [TFMPC] - Too few port connections for 'bit8sr'.  Expected 8, found 7.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6275): (vopt-2718) [TFMPC] - Missing connection for port 'parallel_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7552): (vopt-2685) [TFMPC] - Too few port connections for 'RX_CONTROLLER'.  Expected 35, found 34.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7552): (vopt-2718) [TFMPC] - Missing connection for port 'crc_check'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7562): (vopt-2685) [TFMPC] - Too few port connections for 'STP8'.  Expected 8, found 7.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7562): (vopt-2718) [TFMPC] - Missing connection for port 'serial_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7565): (vopt-2685) [TFMPC] - Too few port connections for 'BYTE_COUNTS'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7565): (vopt-2718) [TFMPC] - Missing connection for port 'count_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7568): (vopt-2685) [TFMPC] - Too few port connections for 'FOUR_clk'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7568): (vopt-2718) [TFMPC] - Missing connection for port 'count_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7571): (vopt-2685) [TFMPC] - Too few port connections for 'DIV_COUNT'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(7571): (vopt-2718) [TFMPC] - Missing connection for port 'count_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6442): (vopt-2685) [TFMPC] - Too few port connections for 'bit_counter'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6442): (vopt-2718) [TFMPC] - Missing connection for port 'count_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6669): (vopt-2685) [TFMPC] - Too few port connections for 'counter3'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6669): (vopt-2718) [TFMPC] - Missing connection for port 'count_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6146): (vopt-2685) [TFMPC] - Too few port connections for 'counter3'.  Expected 7, found 6.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(6146): (vopt-2718) [TFMPC] - Missing connection for port 'count_out'.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(4695): (vopt-2685) [TFMPC] - Too few port connections for 'U2_6'.  Expected 5, found 4.
+** Warning: src/u337mg054_ece337_ahb_usb_syn_0/ahb_usb.v(4695): (vopt-2718) [TFMPC] - Missing connection for port 'YC'.
+** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=28.
+Loading sv_std.std
+Loading work.tb_ahb_usb(fast)
+Loading work.ahb_usb(fast)
+Loading work.ahb_lite_satellite(fast)
+Loading work.DFFSR(fast)
+Loading work.DFFSR_CORE(fast)
+Loading work.BUFX2(fast)
+Loading work.BUFX2(fast__1)
+Loading work.NAND2X1(fast)
+Loading work.OAI21X1(fast)
+Loading work.INVX1(fast)
+Loading work.AOI21X1(fast)
+Loading work.NAND3X1(fast)
+Loading work.NOR2X1(fast)
+Loading work.AOI22X1(fast)
+Loading work.MUX2X1(fast)
+Loading work.OR2X1(fast)
+Loading work.AND2X1(fast)
+Loading work.OAI22X1(fast)
+Loading work.XOR2X1(fast)
+Loading work.XNOR2X1(fast)
+Loading work.data_buffer(fast)
+Loading work.flex_counter_SIZE7_2(fast)
+Loading work.flex_counter_SIZE7_2_DW01_inc_0_DW01_inc_11(fast)
+Loading work.HAX1(fast)
+Loading work.INVX2(fast)
+Loading work.bit8x64_data_reg(fast)
+Loading work.AND2X2(fast)
+Loading work.INVX8(fast)
+Loading work.NOR3X1(fast)
+Loading work.flex_counter_SIZE7_1(fast)
+Loading work.flex_counter_SIZE7_1_DW01_inc_0_DW01_inc_10(fast)
+Loading work.flex_counter_SIZE7_0(fast)
+Loading work.flex_counter_SIZE7_0_DW01_inc_0_DW01_inc_9(fast)
+Loading work.data_buffer_DW01_sub_0(fast)
+Loading work.FAX1(fast)
+Loading work.INVX4(fast)
+Loading work.usb_tx_wrapper(fast)
+Loading work.flex_counter_SIZE4_3(fast)
+Loading work.clk_div(fast)
+Loading work.flex_counter_SIZE4_1(fast)
+Loading work.flex_counter_SIZE3_1(fast)
+Loading work.nrzi_encoder(fast)
+Loading work.usb_tx_fsm(fast)
+Loading work.flex_sr_MSB_FIRST1(fast)
+Loading work.INVX2(fast__1)
+Loading work.usb_rx(fast)
+Loading work.sync_RST_VAL1(fast)
+Loading work.sync_RST_VAL0(fast)
+Loading work.EOP_det(fast)
+Loading work.clk_div_rx(fast)
+Loading work.flex_counter_SIZE4_0(fast)
+Loading work.flex_counter_SIZE3_0(fast)
+Loading work.NRZI_decoder(fast)
+Loading work.data_reg(fast)
+Loading work.rx_controller(fast)
+Loading work.flex_sr(fast)
+Loading work.flex_counter_SIZE4_2(fast)
+Loading work.flex_counter_SIZE3_2(fast)
+Loading work.flex_counter_SIZE8(fast)
+Loading work.flex_counter_SIZE8_DW01_inc_0_DW01_inc_8(fast)
+Loading work.BUFX4(fast)
+Loading work.ahb_model_updated(fast)
+do waves/ahb_usb.do
+set PrefSource(OpenOnFinish) 0 
+0
+ set PrefMain(LinePrefix) "" 
+ set PrefMain(colorizeTranscript) 1
+1
+run -all
+Current Time:3107 ns
+Current Time:21987 ns
+Current Time:52867 ns
+Causality operation skipped due to absence of debug database file
+Current Time:125427 ns
+Current Time:144307 ns
+Current Time:216867 ns
+Current Time:235747 ns
+Current Time:291487 ns
+Current Time:324387 ns
+Current Time:358687 ns
+Current Time:381567 ns
+Current Time:415867 ns
+TB Level: '{0}
+TB Level: '{0}
+TB Level: '{0}
+TB Level: '{0}
+TB Level: '{0}
+TB Level: '{0}
+Ignore Hresp for 2
+** Error: Incorrect 'hresp' response from subordinate device during transaction (transaction 82).
+   Expected 0, got 1.
+   Time: 438940 ns  Scope: tb_ahb_usb.BFM.VERIFY_OUTPUT File: src/ece337_course-lib_ahb_model_updated_1.0.0/source/ahb_model_updated.sv Line: 293
+** Error: Incorrect 'hresp' response from subordinate device during transaction (transaction 89).
+   Expected 0, got 1.
+   Time: 439120 ns  Scope: tb_ahb_usb.BFM.VERIFY_OUTPUT File: src/ece337_course-lib_ahb_model_updated_1.0.0/source/ahb_model_updated.sv Line: 293
+Stop Ignore Hresp
+Ignore Hresp for 2
+** Error: Incorrect 'hresp' response from subordinate device during transaction (transaction 93).
+   Expected 0, got 1.
+   Time: 439540 ns  Scope: tb_ahb_usb.BFM.VERIFY_OUTPUT File: src/ece337_course-lib_ahb_model_updated_1.0.0/source/ahb_model_updated.sv Line: 293
+** Error: Incorrect 'hresp' response from subordinate device during transaction (transaction 95).
+   Expected 0, got 1.
+   Time: 439570 ns  Scope: tb_ahb_usb.BFM.VERIFY_OUTPUT File: src/ece337_course-lib_ahb_model_updated_1.0.0/source/ahb_model_updated.sv Line: 293
+** Error: Incorrect 'hresp' response from subordinate device during transaction (transaction 97).
+   Expected 0, got 1.
+   Time: 439600 ns  Scope: tb_ahb_usb.BFM.VERIFY_OUTPUT File: src/ece337_course-lib_ahb_model_updated_1.0.0/source/ahb_model_updated.sv Line: 293
+** Error: Incorrect 'hresp' response from subordinate device during transaction (transaction 99).
+   Expected 0, got 1.
+   Time: 439630 ns  Scope: tb_ahb_usb.BFM.VERIFY_OUTPUT File: src/ece337_course-lib_ahb_model_updated_1.0.0/source/ahb_model_updated.sv Line: 293
+** Error: Incorrect 'hresp' response from subordinate device during transaction (transaction 101).
+   Expected 0, got 1.
+   Time: 439660 ns  Scope: tb_ahb_usb.BFM.VERIFY_OUTPUT File: src/ece337_course-lib_ahb_model_updated_1.0.0/source/ahb_model_updated.sv Line: 293
+Stop Ignore Hresp
+Current Time:443187 ns
+Current Time:446153 ns
+Current Time:449123 ns
+Current Time:452177 ns
+Current Time:455143 ns
+** Note: $finish    : src/u337mg054_ece337_ahb_usb_1.0.0/testbench/tb_ahb_usb.sv(748)
+   Time: 475380 ns  Iteration: 1  Instance: /tb_ahb_usb
+Break in Module tb_ahb_usb at src/u337mg054_ece337_ahb_usb_1.0.0/testbench/tb_ahb_usb.sv line 748
+End time: 16:30:00 on May 02,2025, Elapsed time: 1:26:11
+Errors: 7, Warnings: 28

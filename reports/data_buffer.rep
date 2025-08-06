@@ -1,0 +1,124 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : data_buffer
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:30:09 2025
+****************************************
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+  Startpoint: rcounter/count_out_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: rx_data[7] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  rcounter/count_out_reg[2]/CLK (DFFSR)                   0.00       0.00 r
+  rcounter/count_out_reg[2]/Q (DFFSR)                     0.79       0.79 f
+  rcounter/count_out[2] (flex_counter_SIZE7_1)            0.00       0.79 f
+  U172/Y (NOR2X1)                                         0.19       0.98 r
+  U145/Y (AND2X2)                                         0.20       1.18 r
+  U161/Y (INVX4)                                          0.91       2.09 f
+  U726/Y (NOR2X1)                                         0.17       2.26 r
+  U728/Y (NOR2X1)                                         0.20       2.46 f
+  U729/Y (OAI21X1)                                        0.14       2.60 r
+  U731/Y (NOR2X1)                                         0.22       2.82 f
+  U741/Y (AOI22X1)                                        0.15       2.97 r
+  U742/Y (AOI21X1)                                        0.14       3.10 f
+  U153/Y (NOR2X1)                                         0.16       3.26 r
+  U840/Y (NOR2X1)                                         0.13       3.39 f
+  rx_data[7] (out)                                        0.00       3.39 f
+  data arrival time                                                  3.39
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+ 
+****************************************
+Report : area
+Design : data_buffer
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:30:09 2025
+****************************************
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+Number of ports:                          742
+Number of nets:                          4697
+Number of cells:                         3980
+Number of combinational cells:           2899
+Number of sequential cells:               536
+Number of macros/black boxes:               0
+Number of buf/inv:                        757
+Number of references:                      19
+
+Combinational area:             795456.000000
+Buf/Inv area:                   122832.000000
+Noncombinational area:          849024.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:               1644480.000000
+Total area:                 undefined
+1
+Loading db file '/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : data_buffer
+Version: W-2024.09-SP4
+Date   : Thu May  1 17:30:10 2025
+****************************************
+
+
+Library(s) Used:
+
+    osu05_stdcells (File: /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db)
+
+
+Operating Conditions: typical   Library: osu05_stdcells
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 5    
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+data_buffer                              61.595   84.131  507.422  145.726 100.0
+  buff_counter (flex_counter_SIZE7_0)     0.602    1.494   10.037    2.096   1.4
+    add_26_aco (flex_counter_SIZE7_0_DW01_inc_0_DW01_inc_1)
+                                       4.43e-03 1.28e-02    1.541 1.72e-02   0.0
+  rcounter (flex_counter_SIZE7_1)         0.321    0.971   10.037    1.292   0.9
+    add_26_aco (flex_counter_SIZE7_1_DW01_inc_0_DW01_inc_2)
+                                       2.94e-04 8.48e-04    1.541 1.14e-03   0.0
+  dataregs (bit8x64_data_reg)            57.497   78.088  426.052  135.585  93.0
+  wcounter (flex_counter_SIZE7_2)         0.632    1.503   10.068    2.135   1.5
+    add_26_aco (flex_counter_SIZE7_2_DW01_inc_0_DW01_inc_3)
+                                       4.43e-03 1.28e-02    1.541 1.72e-02   0.0
+1

@@ -1,0 +1,1104 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version W-2024.09-SP4 for linux64 - Feb 26, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/ecegridfs/a/337mg054/.synopsys_dc_gui/preferences.tcl
+Current time:       Fri May  2 15:03:10 2025
+Hostname:           ececomp2.ecn.purdue.edu
+CPU Model:          AMD EPYC 7513 32-Core Processor
+CPU Details:        Cores = 128 : Sockets = 2 : Cache Size = 512 KB : Freq = 3.43 GHz
+OS:                 Linux 4.18.0-553.50.1.el8_10.x86_64
+RAM:                502 GB (Free  56 GB)
+Swap:                63 GB (Free  60 GB)
+Work Filesystem:    /home/ecegridfs/a mounted to ecegridfs.ecn.purdue.edu:/export/home/a
+Tmp Filesystem:     /tmp mounted to tmpfs
+Work Disk:          2968 GB (Free 121 GB)
+Tmp Disk:            19 GB (Free  18 GB)
+
+CPU Load: 6%, Ram Free: 56 GB, Swap Free: 60 GB, Work Disk Free: 121 GB, Tmp Disk Free: 18 GB
+############################################
+#
+# Auto-generated project tcl file:
+#  * sets up variable
+#  * runs customized script
+#
+############################################
+sh date
+Fri May  2 15:03:10 EDT 2025
+set TOP_MODULE ahb_usb
+ahb_usb
+set DC_SCRIPT synth.tcl
+synth.tcl
+set READ_SOURCES u337mg054_ece337_ahb_usb_1.0.0-read-sources
+u337mg054_ece337_ahb_usb_1.0.0-read-sources
+set SCRIPT_DIR src/u337mg054_ece337_synfiles_0
+src/u337mg054_ece337_synfiles_0
+set REPORT_DIR reports
+reports
+sh mkdir -p ${REPORT_DIR}
+set target_library /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db
+/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db
+set link_library   [concat "*"  /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db dw_foundation.sldb]
+* /home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db dw_foundation.sldb
+############################################
+#
+# Run custom script
+#
+############################################
+source ${SCRIPT_DIR}/${DC_SCRIPT}
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_EOP_det_1.0.0/source/EOP_det.sv
+Presto compilation completed successfully.
+Loading db file '/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db'
+Loading db file '/package/eda/synopsys/syn/W-2024.09-SP4/libraries/syn/dw_foundation.sldb'
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_NRZI_decoder_1.0.0/source/NRZI_decoder.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_data_reg_1.0.0/source/data_reg.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_flex_counter_1.0.0/source/flex_counter.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_flex_sr_1.0.0/source/flex_sr.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_nrzi_encoder_1.0.0/source/nrzi_encoder.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_rx_controller_1.0.0/source/rx_controller.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_sync_0/source/sync.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_clk_div_1.0.0/source/clk_div.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_clk_div_rx_1.0.0/source/clk_div_rx.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_data_buffer_1.0.0/source/data_buffer.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_usb_tx_fsm_1.0.0/source/usb_tx_fsm.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_usb_rx_1.0.0/source/usb_rx.sv
+Warning:  ./src/u337mg054_ece337_usb_rx_1.0.0/source/usb_rx.sv:48: the undeclared symbol 'addr_check' assumed to have the default net type, which is 'wire'. (VER-936)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_usb_tx_wrapper_1.0.0/source/usb_tx_wrapper.sv
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file ./src/u337mg054_ece337_ahb_usb_1.0.0/source/ahb_usb.sv
+Presto compilation completed successfully.
+Loading db file '/package/eda/synopsys/syn/W-2024.09-SP4/libraries/syn/gtech.db'
+Loading db file '/package/eda/synopsys/syn/W-2024.09-SP4/libraries/syn/standard.sldb'
+  Loading link library 'osu05_stdcells'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (ahb_usb)
+Module: ahb_usb, Ports: 87, Input: 50, Output: 37, Inout: 0
+Module: ahb_usb, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module ahb_usb report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'ahb_usb'.
+Information: Building the design 'ahb_lite_satellite'. (HDL-193)
+Warning:  ./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv:102: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv:103: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv:226: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv:333: signed to unsigned assignment occurs. (VER-318)
+Warning:  ./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv:135: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block in file
+	'./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|    107     |    auto/auto     | always block at line 105 |
+|    181     |     no/auto      | always block at line 172 |
+|    183     |     no/auto      | always block at line 172 |
+|    194     |     no/auto      | always block at line 172 |
+|    207     |     no/auto      | always block at line 172 |
+|    224     |     no/auto      | always block at line 172 |
+|    278     |    auto/auto     | always block at line 172 |
+|    350     |     no/auto      | always block at line 343 |
+|    352     |    auto/auto     | always block at line 343 |
+|    368     |    auto/auto     | always block at line 343 |
+|    383     |    auto/auto     | always block at line 343 |
+|    402     |     no/auto      | always block at line 343 |
+|    404     |    auto/auto     | always block at line 343 |
+|    415     |    auto/auto     | always block at line 343 |
+|    425     |    auto/auto     | always block at line 343 |
+|    439     |     no/auto      | always block at line 343 |
+|    441     |     no/auto      | always block at line 343 |
+|    456     |     no/auto      | always block at line 343 |
+|    471     |     no/auto      | always block at line 343 |
+|    502     |    auto/auto     | always block at line 500 |
+|    506     |    auto/auto     | always block at line 500 |
+|    558     |    auto/auto     | always block at line 556 |
+|    569     |    auto/auto     | always block at line 556 |
+============================================================
+
+Inferred memory devices in process in routine 'ahb_lite_satellite' in file
+	 ./src/u337mg054_ece337_ahb_lite_satellite_1.0.0/source/ahb_lite_satellite.sv'.
+===========================================================================================
+|        Register Name         |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+===========================================================================================
+|      last_state_RX_reg       | Flip-flop |   2   |  Y  | N  | None  | Async | N  |  75  |
+|       last_hwrite_reg        | Flip-flop |   1   |  N  | N  | None  | Async | N  |  75  |
+|        last_haddr_reg        | Flip-flop |   4   |  Y  | N  | None  | Async | N  |  75  |
+|        last_hsize_reg        | Flip-flop |   3   |  Y  | N  | None  | Async | N  |  75  |
+|        last_state_reg        | Flip-flop |   2   |  Y  | N  | None  | Async | N  |  89  |
+|     last_hwrite_RAW_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  |  89  |
+|      last_haddr_RAW_reg      | Flip-flop |   4   |  Y  | N  | None  | Async | N  |  89  |
+|       hready_state_reg       | Flip-flop |   2   |  Y  | N  | Async | None  | N  | 157  |
+|     data_buffer_reg_reg      | Flip-flop |  32   |  Y  | N  | None  | Async | N  | 157  |
+|  tx_packet_control_reg_reg   | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 157  |
+| flush_buffer_control_reg_reg | Flip-flop |   8   |  Y  | N  | None  | Async | N  | 157  |
+|     TX_current_hsize_reg     | Flip-flop |   2   |  Y  | N  | None  | Async | N  | 490  |
+|         TX_state_reg         | Flip-flop |   5   |  Y  | N  | None  | Async | N  | 490  |
+|     RX_current_hsize_reg     | Flip-flop |   2   |  Y  | N  | None  | Async | N  | 544  |
+|         RX_state_reg         | Flip-flop |   3   |  Y  | N  | Async | Async | N  | 544  |
+===========================================================================================
+Presto compilation completed successfully. (ahb_lite_satellite)
+Module: ahb_lite_satellite, Ports: 129, Input: 80, Output: 49, Inout: 0
+Module: ahb_lite_satellite, Registers: 81, Async set/reset: 81, Sync set/reset: 0
+Information: Module ahb_lite_satellite report end. (ELAB-965)
+Information: Building the design 'data_buffer'. (HDL-193)
+
+Inferred memory devices in process in routine 'data_buffer' in file
+	 ./src/u337mg054_ece337_data_buffer_1.0.0/source/data_buffer.sv'.
+=====================================================================================
+|     Register Name      |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+=====================================================================================
+| last_store_RX_data_reg | Flip-flop |   1   |  N  | N  | None  | Async | N  |  18  |
+| last_store_TX_data_reg | Flip-flop |   1   |  N  | N  | None  | Async | N  |  18  |
+=====================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|  data_buffer/81  |   64   |    8    |      6       |
+======================================================
+Presto compilation completed successfully. (data_buffer)
+Module: data_buffer, Ports: 48, Input: 24, Output: 24, Inout: 0
+Module: data_buffer, Registers: 2, Async set/reset: 2, Sync set/reset: 0
+Information: Module data_buffer report end. (ELAB-965)
+Information: Building the design 'usb_tx_wrapper'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'./src/u337mg054_ece337_usb_tx_wrapper_1.0.0/source/usb_tx_wrapper.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     15     |    auto/auto     | always block at line 13 |
+===========================================================
+Presto compilation completed successfully. (usb_tx_wrapper)
+Module: usb_tx_wrapper, Ports: 26, Input: 20, Output: 6, Inout: 0
+Module: usb_tx_wrapper, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module usb_tx_wrapper report end. (ELAB-965)
+Information: Building the design 'usb_rx'. (HDL-193)
+
+Inferred memory devices in process in routine 'usb_rx' in file
+	 ./src/u337mg054_ece337_usb_rx_1.0.0/source/usb_rx.sv'.
+===================================================================================
+|    Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+===================================================================================
+| clear_diff_count_reg | Flip-flop |   1   |  N  | N  | None  | Async | N  |  89  |
+===================================================================================
+Presto compilation completed successfully. (usb_rx)
+Module: usb_rx, Ports: 30, Input: 14, Output: 16, Inout: 0
+Module: usb_rx, Registers: 1, Async set/reset: 1, Sync set/reset: 0
+Information: Module usb_rx report end. (ELAB-965)
+Information: Building the design 'flex_counter' instantiated from design 'data_buffer' with
+	the parameters "7". (HDL-193)
+
+Inferred memory devices in process in routine 'flex_counter_SIZE7' in file
+	 ./src/u337mg054_ece337_flex_counter_1.0.0/source/flex_counter.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|  rollover_flag_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  |  35  |
+|    count_out_reg    | Flip-flop |   7   |  Y  | N  | None  | Async | N  |  35  |
+==================================================================================
+Presto compilation completed successfully. (flex_counter_SIZE7)
+Module: flex_counter_SIZE7, Ports: 19, Input: 11, Output: 8, Inout: 0
+Module: flex_counter_SIZE7, Registers: 8, Async set/reset: 8, Sync set/reset: 0
+Information: Module flex_counter_SIZE7 report end. (ELAB-965)
+Information: Building the design 'bit8x64_data_reg'. (HDL-193)
+
+Inferred memory devices in process in routine 'bit8x64_data_reg' in file
+	 ./src/u337mg054_ece337_data_buffer_1.0.0/source/data_buffer.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      data_reg       | Flip-flop |  512  |  Y  | N  | None  | Async | N  | 152  |
+==================================================================================
+Statistics for MUX_OPs
+==========================================================
+|   block name/line    | Inputs | Outputs | # sel inputs |
+==========================================================
+| bit8x64_data_reg/165 |   64   |    1    |      6       |
+| bit8x64_data_reg/169 |   64   |    8    |      6       |
+==========================================================
+Presto compilation completed successfully. (bit8x64_data_reg)
+Module: bit8x64_data_reg, Ports: 595, Input: 83, Output: 512, Inout: 0
+Module: bit8x64_data_reg, Registers: 512, Async set/reset: 512, Sync set/reset: 0
+Information: Module bit8x64_data_reg report end. (ELAB-965)
+Information: Building the design 'flex_counter' instantiated from design 'usb_tx_wrapper' with
+	the parameters "4". (HDL-193)
+
+Inferred memory devices in process in routine 'flex_counter_SIZE4' in file
+	 ./src/u337mg054_ece337_flex_counter_1.0.0/source/flex_counter.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|  rollover_flag_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  |  35  |
+|    count_out_reg    | Flip-flop |   4   |  Y  | N  | None  | Async | N  |  35  |
+==================================================================================
+Presto compilation completed successfully. (flex_counter_SIZE4)
+Module: flex_counter_SIZE4, Ports: 13, Input: 8, Output: 5, Inout: 0
+Module: flex_counter_SIZE4, Registers: 5, Async set/reset: 5, Sync set/reset: 0
+Information: Module flex_counter_SIZE4 report end. (ELAB-965)
+Information: Building the design 'clk_div'. (HDL-193)
+
+Inferred memory devices in process in routine 'clk_div' in file
+	 ./src/u337mg054_ece337_clk_div_1.0.0/source/clk_div.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     cnt_en_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  |  15  |
+==================================================================================
+Presto compilation completed successfully. (clk_div)
+Module: clk_div, Ports: 5, Input: 4, Output: 1, Inout: 0
+Module: clk_div, Registers: 1, Async set/reset: 1, Sync set/reset: 0
+Information: Module clk_div report end. (ELAB-965)
+Information: Building the design 'nrzi_encoder'. (HDL-193)
+Warning:  ./src/u337mg054_ece337_nrzi_encoder_1.0.0/source/nrzi_encoder.sv:7: signed to unsigned assignment occurs. (VER-318)
+Presto compilation completed successfully. (nrzi_encoder)
+Module: nrzi_encoder, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: nrzi_encoder, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module nrzi_encoder report end. (ELAB-965)
+Information: Building the design 'usb_tx_fsm'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'./src/u337mg054_ece337_usb_tx_fsm_1.0.0/source/usb_tx_fsm.sv'
+============================================================
+|    Line    |  full/ parallel  |      block location      |
+============================================================
+|     55     |    auto/auto     | always block at line 54  |
+|    185     |    auto/auto     | always block at line 182 |
+============================================================
+
+Inferred memory devices in process in routine 'usb_tx_fsm' in file
+	 ./src/u337mg054_ece337_usb_tx_fsm_1.0.0/source/usb_tx_fsm.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      state_reg      | Flip-flop |   5   |  Y  | N  | None  | Async | N  |  45  |
+==================================================================================
+Presto compilation completed successfully. (usb_tx_fsm)
+Module: usb_tx_fsm, Ports: 38, Input: 30, Output: 8, Inout: 0
+Module: usb_tx_fsm, Registers: 5, Async set/reset: 5, Sync set/reset: 0
+Information: Module usb_tx_fsm report end. (ELAB-965)
+Information: Building the design 'sync' instantiated from design 'usb_rx' with
+	the parameters "1". (HDL-193)
+
+Inferred memory devices in process in routine 'sync_RST_VAL1' in file
+	 ./src/u337mg054_ece337_sync_0/source/sync.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    sync_out_reg     | Flip-flop |   1   |  N  | N  | Async | None  | N  |  13  |
+|     ff_out_reg      | Flip-flop |   1   |  N  | N  | Async | None  | N  |  13  |
+==================================================================================
+Presto compilation completed successfully. (sync_RST_VAL1)
+Module: sync_RST_VAL1, Ports: 4, Input: 3, Output: 1, Inout: 0
+Module: sync_RST_VAL1, Registers: 2, Async set/reset: 2, Sync set/reset: 0
+Information: Module sync_RST_VAL1 report end. (ELAB-965)
+Information: Building the design 'sync' instantiated from design 'usb_rx' with
+	the parameters "0". (HDL-193)
+
+Inferred memory devices in process in routine 'sync_RST_VAL0' in file
+	 ./src/u337mg054_ece337_sync_0/source/sync.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|    sync_out_reg     | Flip-flop |   1   |  N  | N  | None  | Async | N  |  13  |
+|     ff_out_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  |  13  |
+==================================================================================
+Presto compilation completed successfully. (sync_RST_VAL0)
+Module: sync_RST_VAL0, Ports: 4, Input: 3, Output: 1, Inout: 0
+Module: sync_RST_VAL0, Registers: 2, Async set/reset: 2, Sync set/reset: 0
+Information: Module sync_RST_VAL0 report end. (ELAB-965)
+Information: Building the design 'EOP_det'. (HDL-193)
+
+Inferred memory devices in process in routine 'EOP_det' in file
+	 ./src/u337mg054_ece337_EOP_det_1.0.0/source/EOP_det.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   prev_dp_in_reg    | Flip-flop |   1   |  N  | N  | Async | None  | N  |  14  |
+|    eop_count_reg    | Flip-flop |   2   |  Y  | N  | None  | Async | N  |  14  |
+|   prev_dm_in_reg    | Flip-flop |   1   |  N  | N  | None  | Async | N  |  14  |
+==================================================================================
+Presto compilation completed successfully. (EOP_det)
+Module: EOP_det, Ports: 8, Input: 6, Output: 2, Inout: 0
+Module: EOP_det, Registers: 4, Async set/reset: 4, Sync set/reset: 0
+Information: Module EOP_det report end. (ELAB-965)
+Information: Building the design 'clk_div_rx'. (HDL-193)
+
+Inferred memory devices in process in routine 'clk_div_rx' in file
+	 ./src/u337mg054_ece337_clk_div_rx_1.0.0/source/clk_div_rx.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     cnt_en_reg      | Flip-flop |   1   |  N  | N  | None  | Async | N  |  15  |
+|  last_readjust_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  |  25  |
+==================================================================================
+Presto compilation completed successfully. (clk_div_rx)
+Module: clk_div_rx, Ports: 6, Input: 5, Output: 1, Inout: 0
+Module: clk_div_rx, Registers: 2, Async set/reset: 2, Sync set/reset: 0
+Information: Module clk_div_rx report end. (ELAB-965)
+Information: Building the design 'NRZI_decoder'. (HDL-193)
+
+Inferred memory devices in process in routine 'NRZI_decoder' in file
+	 ./src/u337mg054_ece337_NRZI_decoder_1.0.0/source/NRZI_decoder.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   dp_in_prev_reg    | Flip-flop |   1   |  N  | N  | Async | None  | N  |  12  |
+==================================================================================
+Presto compilation completed successfully. (NRZI_decoder)
+Module: NRZI_decoder, Ports: 6, Input: 4, Output: 2, Inout: 0
+Module: NRZI_decoder, Registers: 1, Async set/reset: 1, Sync set/reset: 0
+Information: Module NRZI_decoder report end. (ELAB-965)
+Information: Building the design 'data_reg'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'./src/u337mg054_ece337_data_reg_1.0.0/source/data_reg.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     49     |    auto/auto     | always block at line 46 |
+===========================================================
+
+Inferred memory devices in process in routine 'data_reg' in file
+	 ./src/u337mg054_ece337_data_reg_1.0.0/source/data_reg.sv'.
+===================================================================================
+|    Register Name     |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+===================================================================================
+|   rx_packet_r_reg    | Flip-flop |   3   |  Y  | N  | None  | Async | N  |  18  |
+|  data_register_reg   | Flip-flop |  16   |  Y  | N  | None  | Async | N  |  18  |
+| rx_packet_data_r_reg | Flip-flop |   8   |  Y  | N  | None  | Async | N  |  18  |
+===================================================================================
+Presto compilation completed successfully. (data_reg)
+Module: data_reg, Ports: 29, Input: 16, Output: 13, Inout: 0
+Module: data_reg, Registers: 27, Async set/reset: 27, Sync set/reset: 0
+Information: Module data_reg report end. (ELAB-965)
+Information: Building the design 'rx_controller'. (HDL-193)
+
+Statistics for case statements in always block in file
+	'./src/u337mg054_ece337_rx_controller_1.0.0/source/rx_controller.sv'
+===========================================================
+|    Line    |  full/ parallel  |      block location     |
+===========================================================
+|     35     |    auto/auto     | always block at line 33 |
+|     45     |    auto/auto     | always block at line 33 |
+|    117     |     no/auto      | always block at line 96 |
+===========================================================
+
+Inferred memory devices in process in routine 'rx_controller' in file
+	 ./src/u337mg054_ece337_rx_controller_1.0.0/source/rx_controller.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|      state_reg      | Flip-flop |   6   |  Y  | N  | None  | Async | N  |  22  |
+==================================================================================
+Presto compilation completed successfully. (rx_controller)
+Module: rx_controller, Ports: 48, Input: 28, Output: 20, Inout: 0
+Module: rx_controller, Registers: 6, Async set/reset: 6, Sync set/reset: 0
+Information: Module rx_controller report end. (ELAB-965)
+Information: Building the design 'flex_sr'. (HDL-193)
+
+Inferred memory devices in process in routine 'flex_sr' in file
+	 ./src/u337mg054_ece337_flex_sr_1.0.0/source/flex_sr.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   serial_out_reg    | Flip-flop |   1   |  N  | N  | Async | None  | N  |  35  |
+|  parallel_out_reg   | Flip-flop |   8   |  Y  | N  | Async | None  | N  |  35  |
+==================================================================================
+Presto compilation completed successfully. (flex_sr)
+Module: flex_sr, Ports: 22, Input: 13, Output: 9, Inout: 0
+Module: flex_sr, Registers: 9, Async set/reset: 9, Sync set/reset: 0
+Information: Module flex_sr report end. (ELAB-965)
+Information: Building the design 'flex_counter' instantiated from design 'usb_rx' with
+	the parameters "3". (HDL-193)
+
+Inferred memory devices in process in routine 'flex_counter_SIZE3' in file
+	 ./src/u337mg054_ece337_flex_counter_1.0.0/source/flex_counter.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|  rollover_flag_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  |  35  |
+|    count_out_reg    | Flip-flop |   3   |  Y  | N  | None  | Async | N  |  35  |
+==================================================================================
+Presto compilation completed successfully. (flex_counter_SIZE3)
+Module: flex_counter_SIZE3, Ports: 11, Input: 7, Output: 4, Inout: 0
+Module: flex_counter_SIZE3, Registers: 4, Async set/reset: 4, Sync set/reset: 0
+Information: Module flex_counter_SIZE3 report end. (ELAB-965)
+Information: Building the design 'flex_counter' instantiated from design 'usb_rx' with
+	the parameters "8". (HDL-193)
+
+Inferred memory devices in process in routine 'flex_counter_SIZE8' in file
+	 ./src/u337mg054_ece337_flex_counter_1.0.0/source/flex_counter.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|  rollover_flag_reg  | Flip-flop |   1   |  N  | N  | None  | Async | N  |  35  |
+|    count_out_reg    | Flip-flop |   8   |  Y  | N  | None  | Async | N  |  35  |
+==================================================================================
+Presto compilation completed successfully. (flex_counter_SIZE8)
+Module: flex_counter_SIZE8, Ports: 21, Input: 12, Output: 9, Inout: 0
+Module: flex_counter_SIZE8, Registers: 9, Async set/reset: 9, Sync set/reset: 0
+Information: Module flex_counter_SIZE8 report end. (ELAB-965)
+Information: Building the design 'flex_sr' instantiated from design 'usb_tx_fsm' with
+	the parameters "MSB_FIRST=1". (HDL-193)
+
+Inferred memory devices in process in routine 'flex_sr_MSB_FIRST1' in file
+	 ./src/u337mg054_ece337_flex_sr_1.0.0/source/flex_sr.sv'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|   serial_out_reg    | Flip-flop |   1   |  N  | N  | Async | None  | N  |  35  |
+|  parallel_out_reg   | Flip-flop |   8   |  Y  | N  | Async | None  | N  |  35  |
+==================================================================================
+Presto compilation completed successfully. (flex_sr_MSB_FIRST1)
+Module: flex_sr_MSB_FIRST1, Ports: 22, Input: 13, Output: 9, Inout: 0
+Module: flex_sr_MSB_FIRST1, Registers: 9, Async set/reset: 9, Sync set/reset: 0
+Information: Module flex_sr_MSB_FIRST1 report end. (ELAB-965)
+Information: Uniquified 3 instances of design 'flex_counter_SIZE7'. (OPT-1056)
+Information: Uniquified 4 instances of design 'flex_counter_SIZE4'. (OPT-1056)
+Information: Uniquified 3 instances of design 'flex_counter_SIZE3'. (OPT-1056)
+CPU Load: 6%, Ram Free: 56 GB, Swap Free: 60 GB, Work Disk Free: 121 GB, Tmp Disk Free: 18 GB
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.4 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.4 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 3573                                   |
+| Number of User Hierarchies                              | 28                                     |
+| Sequential Cell Count                                   | 729                                    |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch Cells                              | 1085                                   |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 146 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'flex_counter_SIZE8'
+Module: DW01_MUX, Ports: 4, Input: 3, Output: 1, Inout: 0
+Module: DW01_MUX, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_mmux_width2, Ports: 7, Input: 5, Output: 2, Inout: 0
+Module: DW01_mmux_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_mmux_width3, Ports: 10, Input: 7, Output: 3, Inout: 0
+Module: DW01_mmux_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_mmux_width4, Ports: 13, Input: 9, Output: 4, Inout: 0
+Module: DW01_mmux_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_mmux_width5, Ports: 16, Input: 11, Output: 5, Inout: 0
+Module: DW01_mmux_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_NAND2, Ports: 3, Input: 2, Output: 1, Inout: 0
+Module: DW01_NAND2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_NOT, Ports: 2, Input: 1, Output: 1, Inout: 0
+Module: DW01_NOT, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width8, Ports: 23, Input: 17, Output: 6, Inout: 0
+Module: DW01_cmp6_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width8, Ports: 20, Input: 18, Output: 2, Inout: 0
+Module: DW01_cmp2_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width8, Ports: 26, Input: 17, Output: 9, Inout: 0
+Module: DW01_add_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_incdec_width8, Ports: 17, Input: 9, Output: 8, Inout: 0
+Module: DW01_incdec_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width8_B_width1, Ports: 19, Input: 10, Output: 9, Inout: 0
+Module: DW02_mult_A_width8_B_width1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_absval_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_absval_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width8, Ports: 16, Input: 8, Output: 8, Inout: 0
+Module: DW01_inc_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_absval_width1, Ports: 2, Input: 1, Output: 1, Inout: 0
+Module: DW01_absval_width1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width1, Ports: 2, Input: 1, Output: 1, Inout: 0
+Module: DW01_inc_width1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width9, Ports: 18, Input: 9, Output: 9, Inout: 0
+Module: DW01_inc_width9, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width1_B_width8, Ports: 19, Input: 10, Output: 9, Inout: 0
+Module: DW02_mult_A_width1_B_width8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'flex_counter_SIZE3_2'
+Module: DW01_inc_width3, Ports: 6, Input: 3, Output: 3, Inout: 0
+Module: DW01_inc_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width3, Ports: 13, Input: 7, Output: 6, Inout: 0
+Module: DW01_cmp6_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width3, Ports: 10, Input: 8, Output: 2, Inout: 0
+Module: DW01_cmp2_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width3, Ports: 11, Input: 7, Output: 4, Inout: 0
+Module: DW01_add_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_incdec_width3, Ports: 7, Input: 4, Output: 3, Inout: 0
+Module: DW01_incdec_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width3_B_width1, Ports: 9, Input: 5, Output: 4, Inout: 0
+Module: DW02_mult_A_width3_B_width1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_absval_width3, Ports: 6, Input: 3, Output: 3, Inout: 0
+Module: DW01_absval_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width3, Ports: 6, Input: 3, Output: 3, Inout: 0
+Module: DW01_inc_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width1_B_width3, Ports: 9, Input: 5, Output: 4, Inout: 0
+Module: DW02_mult_A_width1_B_width3, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE3_2'. (DDB-72)
+  Processing 'flex_counter_SIZE4_2'
+Module: DW01_inc_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_inc_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width4, Ports: 15, Input: 9, Output: 6, Inout: 0
+Module: DW01_cmp6_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width4, Ports: 12, Input: 10, Output: 2, Inout: 0
+Module: DW01_cmp2_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width4, Ports: 14, Input: 9, Output: 5, Inout: 0
+Module: DW01_add_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_incdec_width4, Ports: 9, Input: 5, Output: 4, Inout: 0
+Module: DW01_incdec_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width4_B_width1, Ports: 11, Input: 6, Output: 5, Inout: 0
+Module: DW02_mult_A_width4_B_width1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_absval_width4, Ports: 8, Input: 4, Output: 4, Inout: 0
+Module: DW01_absval_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width5, Ports: 10, Input: 5, Output: 5, Inout: 0
+Module: DW01_inc_width5, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width1_B_width4, Ports: 11, Input: 6, Output: 5, Inout: 0
+Module: DW02_mult_A_width1_B_width4, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'flex_sr'
+  Processing 'rx_controller'
+  Processing 'data_reg'
+  Processing 'NRZI_decoder'
+  Processing 'clk_div_rx'
+  Processing 'EOP_det'
+Module: DW01_inc_width2, Ports: 4, Input: 2, Output: 2, Inout: 0
+Module: DW01_inc_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width2, Ports: 8, Input: 5, Output: 3, Inout: 0
+Module: DW01_add_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_incdec_width2, Ports: 5, Input: 3, Output: 2, Inout: 0
+Module: DW01_incdec_width2, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'sync_RST_VAL0'
+  Processing 'sync_RST_VAL1'
+  Processing 'usb_rx'
+  Processing 'flex_sr_MSB_FIRST1'
+  Processing 'usb_tx_fsm'
+  Processing 'nrzi_encoder'
+  Processing 'clk_div'
+  Processing 'usb_tx_wrapper'
+  Processing 'flex_counter_SIZE7_0'
+Module: DW01_inc_width7, Ports: 14, Input: 7, Output: 7, Inout: 0
+Module: DW01_inc_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp6_width7, Ports: 21, Input: 15, Output: 6, Inout: 0
+Module: DW01_cmp6_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_cmp2_width7, Ports: 18, Input: 16, Output: 2, Inout: 0
+Module: DW01_cmp2_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_add_width7, Ports: 23, Input: 15, Output: 8, Inout: 0
+Module: DW01_add_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_incdec_width7, Ports: 15, Input: 8, Output: 7, Inout: 0
+Module: DW01_incdec_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width7_B_width1, Ports: 17, Input: 9, Output: 8, Inout: 0
+Module: DW02_mult_A_width7_B_width1, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_absval_width7, Ports: 14, Input: 7, Output: 7, Inout: 0
+Module: DW01_absval_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW01_inc_width7, Ports: 14, Input: 7, Output: 7, Inout: 0
+Module: DW01_inc_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Module: DW02_mult_A_width1_B_width7, Ports: 17, Input: 9, Output: 8, Inout: 0
+Module: DW02_mult_A_width1_B_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'bit8x64_data_reg'
+  Processing 'data_buffer'
+Module: DW01_sub_width7, Ports: 23, Input: 15, Output: 8, Inout: 0
+Module: DW01_sub_width7, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+  Processing 'ahb_lite_satellite'
+Information: The register 'last_state_reg[0]' will be removed. (OPT-1207)
+Information: The register 'last_state_RX_reg[0]' will be removed. (OPT-1207)
+Information: The register 'TX_state_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'RX_state_reg[4]' is a constant and will be removed. (OPT-1206)
+  Processing 'ahb_usb'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: Design 'ahb_usb' has no optimization constraints set. (OPT-108)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'flex_counter_SIZE8_DW01_cmp6_0_DW01_cmp6_3'
+  Processing 'flex_counter_SIZE8_DW01_inc_0_DW01_inc_8'
+  Mapping 'flex_counter_SIZE8_DW_mult_uns_0'
+  Processing 'flex_counter_SIZE8_DW01_cmp2_0_DW01_cmp2_6'
+  Mapping 'flex_counter_SIZE4_2_DW_mult_uns_0'
+  Mapping 'flex_counter_SIZE4_0_DW_mult_uns_0'
+  Mapping 'flex_counter_SIZE4_1_DW_mult_uns_0'
+  Mapping 'flex_counter_SIZE4_3_DW_mult_uns_0'
+  Processing 'data_buffer_DW01_sub_0'
+  Processing 'data_buffer_DW01_cmp2_0_DW01_cmp2_7'
+  Processing 'flex_counter_SIZE7_0_DW01_cmp6_0_DW01_cmp6_4'
+  Processing 'flex_counter_SIZE7_0_DW01_inc_0_DW01_inc_9'
+  Mapping 'flex_counter_SIZE7_0_DW_mult_uns_0'
+  Processing 'flex_counter_SIZE7_0_DW01_cmp2_0_DW01_cmp2_8'
+  Processing 'flex_counter_SIZE7_1_DW01_cmp6_0_DW01_cmp6_5'
+  Processing 'flex_counter_SIZE7_1_DW01_inc_0_DW01_inc_10'
+  Mapping 'flex_counter_SIZE7_1_DW_mult_uns_0'
+  Processing 'flex_counter_SIZE7_1_DW01_cmp2_0_DW01_cmp2_9'
+  Processing 'flex_counter_SIZE7_2_DW01_cmp6_0_DW01_cmp6_6'
+  Processing 'flex_counter_SIZE7_2_DW01_inc_0_DW01_inc_11'
+  Mapping 'flex_counter_SIZE7_2_DW_mult_uns_0'
+  Processing 'flex_counter_SIZE7_2_DW01_cmp2_0_DW01_cmp2_10'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE8'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE4_2'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE4_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE4_1'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE4_3'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE7_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE7_1'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'flex_counter_SIZE7_2'. (DDB-72)
+  Structuring 'flex_counter_SIZE4_2'
+  Mapping 'flex_counter_SIZE4_2'
+  Structuring 'flex_counter_SIZE4_1'
+  Mapping 'flex_counter_SIZE4_1'
+  Structuring 'flex_counter_SIZE4_0'
+  Mapping 'flex_counter_SIZE4_0'
+  Structuring 'flex_counter_SIZE7_1'
+  Mapping 'flex_counter_SIZE7_1'
+  Structuring 'flex_counter_SIZE7_0'
+  Mapping 'flex_counter_SIZE7_0'
+  Structuring 'flex_counter_SIZE3_1'
+  Mapping 'flex_counter_SIZE3_1'
+  Structuring 'flex_counter_SIZE3_0'
+  Mapping 'flex_counter_SIZE3_0'
+  Structuring 'flex_sr_MSB_FIRST1'
+  Mapping 'flex_sr_MSB_FIRST1'
+  Structuring 'flex_counter_SIZE8'
+  Mapping 'flex_counter_SIZE8'
+  Structuring 'flex_counter_SIZE3_2'
+  Mapping 'flex_counter_SIZE3_2'
+  Structuring 'flex_sr'
+  Mapping 'flex_sr'
+  Structuring 'rx_controller'
+  Mapping 'rx_controller'
+  Structuring 'data_reg'
+  Mapping 'data_reg'
+  Structuring 'NRZI_decoder'
+  Mapping 'NRZI_decoder'
+  Structuring 'clk_div_rx'
+  Mapping 'clk_div_rx'
+  Structuring 'EOP_det'
+  Mapping 'EOP_det'
+  Structuring 'usb_tx_fsm'
+  Mapping 'usb_tx_fsm'
+  Structuring 'nrzi_encoder'
+  Mapping 'nrzi_encoder'
+  Structuring 'clk_div'
+  Mapping 'clk_div'
+  Structuring 'flex_counter_SIZE4_3'
+  Mapping 'flex_counter_SIZE4_3'
+  Structuring 'bit8x64_data_reg'
+  Mapping 'bit8x64_data_reg'
+  Structuring 'flex_counter_SIZE7_2'
+  Mapping 'flex_counter_SIZE7_2'
+  Structuring 'usb_rx'
+  Mapping 'usb_rx'
+  Structuring 'usb_tx_wrapper'
+  Mapping 'usb_tx_wrapper'
+  Structuring 'data_buffer'
+  Mapping 'data_buffer'
+  Structuring 'ahb_lite_satellite'
+  Mapping 'ahb_lite_satellite'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07 2323242.0      0.00       0.0    2635.7                          
+    0:00:07 2323242.0      0.00       0.0    2635.7                          
+    0:00:07 2323242.0      0.00       0.0    2635.7                          
+    0:00:07 2323242.0      0.00       0.0    2635.7                          
+    0:00:07 2323242.0      0.00       0.0    2635.7                          
+    0:00:07 2305962.0      0.00       0.0    2635.7                          
+    0:00:07 2305890.0      0.00       0.0    2635.7                          
+    0:00:07 2305890.0      0.00       0.0    2635.7                          
+    0:00:07 2305890.0      0.00       0.0    2635.7                          
+    0:00:07 2305890.0      0.00       0.0    2635.7                          
+    0:00:07 2305890.0      0.00       0.0    2635.7                          
+    0:00:07 2306178.0      0.00       0.0    2610.8                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+
+
+  Beginning Design Rule Fixing  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07 2306322.0      0.00       0.0    2606.6                          
+    0:00:07 2318274.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:07 2318274.0      0.00       0.0       0.0                          
+    0:00:07 2318274.0      0.00       0.0       0.0                          
+    0:00:08 2312874.0      0.00       0.0       0.0                          
+    0:00:08 2310858.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+    0:00:08 2310570.0      0.00       0.0       0.0                          
+Loading db file '/home/ecegrid/a/ece337/summer24-refactor/tech/ami05/osu05_stdcells.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+CPU Load: 7%, Ram Free: 56 GB, Swap Free: 60 GB, Work Disk Free: 121 GB, Tmp Disk Free: 18 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+Writing verilog file '/home/ecegridfs/a/337mg054/CDL/tmp/build/u337mg054_ece337_ahb_usb_1.0.0/syn-design_compiler/ahb_usb.v'.
+ 
+****************************************
+check_design summary:
+Version:     W-2024.09-SP4
+Date:        Fri May  2 15:03:20 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     20
+    Unconnected ports (LINT-28)                                    15
+    Feedthrough (LINT-29)                                           3
+    Shorted outputs (LINT-31)                                       2
+
+Cells                                                              90
+    Connected to power or ground (LINT-32)                         76
+    Nets connected to multiple pins on same cell (LINT-33)         14
+--------------------------------------------------------------------------------
+
+Warning: In design 'ahb_lite_satellite', port 'raddr[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'raddr[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'raddr[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'raddr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'raddr[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'raddr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'raddr[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'htrans[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'hburst[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'hburst[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', port 'hburst[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_reg', port 'flush' is not connected to any nets. (LINT-28)
+Warning: In design 'data_reg', port 'send_packet' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'data_buffer_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'ahb_lite_satellite', input port 'TX_transfer_active' is connected directly to output port 'd_mode'. (LINT-29)
+Warning: In design 'nrzi_encoder', input port 'data[7]' is connected directly to output port 'encoded_data[7]'. (LINT-29)
+Warning: In design 'rx_controller', input port 'clk_div' is connected directly to output port 'EOP_en'. (LINT-29)
+Warning: In design 'rx_controller', output port 'store_rx_data' is connected directly to output port 'store_data'. (LINT-31)
+Warning: In design 'rx_controller', output port 'shift_en' is connected directly to output port 'count_en'. (LINT-31)
+Warning: In design 'ahb_usb', a pin on submodule 'AHB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'raddr[6]' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'AHB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'raddr[5]' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'AHB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'raddr[4]' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'AHB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'raddr[3]' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'AHB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'raddr[2]' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'AHB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'raddr[1]' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'AHB' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'raddr[0]' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'RX' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'crc_right' is connected to logic 1. 
+Warning: In design 'ahb_usb', a pin on submodule 'RX' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'crc_wrong' is connected to logic 0. 
+Warning: In design 'ahb_usb', a pin on submodule 'RX' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'bitstuff_error' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'wcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[6]' is connected to logic 1. 
+Warning: In design 'data_buffer', a pin on submodule 'wcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[5]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'wcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[4]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'wcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'wcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'wcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'wcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'rcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[6]' is connected to logic 1. 
+Warning: In design 'data_buffer', a pin on submodule 'rcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[5]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'rcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[4]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'rcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'rcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'rcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'rcounter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'buff_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[6]' is connected to logic 1. 
+Warning: In design 'data_buffer', a pin on submodule 'buff_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[5]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'buff_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[4]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'buff_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'buff_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'buff_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'buff_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'data_buffer', a pin on submodule 'sub_136' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'usb_tx_wrapper', a pin on submodule 'bit_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 1. 
+Warning: In design 'usb_tx_wrapper', a pin on submodule 'bit_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'usb_tx_wrapper', a pin on submodule 'bit_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'usb_tx_wrapper', a pin on submodule 'bit_counter' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'usb_tx_wrapper', a pin on submodule 'fsm' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pidbyte[0]' is connected to logic 1. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'load_enable' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[7]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[6]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[5]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[4]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[3]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[2]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[1]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'STP8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'parallel_in[0]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'BYTE_COUNTS' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 1. 
+Warning: In design 'usb_rx', a pin on submodule 'BYTE_COUNTS' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'BYTE_COUNTS' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'BYTE_COUNTS' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'FOUR_clk' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'FOUR_clk' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 1. 
+Warning: In design 'usb_rx', a pin on submodule 'FOUR_clk' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[7]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[6]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[5]' is connected to logic 1. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[4]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 1. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 1. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'usb_rx', a pin on submodule 'DIV_COUNT' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 1. 
+Warning: In design 'clk_div', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 1. 
+Warning: In design 'clk_div', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'clk_div', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'clk_div', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'clk_div', a pin on submodule 'counter3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'clk_div', a pin on submodule 'counter3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 1. 
+Warning: In design 'clk_div', a pin on submodule 'counter3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 1. 
+Warning: In design 'usb_tx_fsm', a pin on submodule 'bit8sr' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'serial_in' is connected to logic 0. 
+Warning: In design 'clk_div_rx', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[3]' is connected to logic 1. 
+Warning: In design 'clk_div_rx', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'clk_div_rx', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 0. 
+Warning: In design 'clk_div_rx', a pin on submodule 'counter8' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 0. 
+Warning: In design 'clk_div_rx', a pin on submodule 'counter3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[2]' is connected to logic 0. 
+Warning: In design 'clk_div_rx', a pin on submodule 'counter3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[1]' is connected to logic 1. 
+Warning: In design 'clk_div_rx', a pin on submodule 'counter3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'rollover_val[0]' is connected to logic 1. 
+Warning: In design 'ahb_usb', the same net is connected to more than one pin on submodule 'RX'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'crc_wrong', 'bitstuff_error''.
+Warning: In design 'data_buffer', the same net is connected to more than one pin on submodule 'wcounter'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[5]', 'rollover_val[4]'', 'rollover_val[3]', 'rollover_val[2]', 'rollover_val[1]', 'rollover_val[0]'.
+Warning: In design 'data_buffer', the same net is connected to more than one pin on submodule 'rcounter'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[5]', 'rollover_val[4]'', 'rollover_val[3]', 'rollover_val[2]', 'rollover_val[1]', 'rollover_val[0]'.
+Warning: In design 'data_buffer', the same net is connected to more than one pin on submodule 'buff_counter'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[5]', 'rollover_val[4]'', 'rollover_val[3]', 'rollover_val[2]', 'rollover_val[1]', 'rollover_val[0]'.
+Warning: In design 'usb_tx_wrapper', the same net is connected to more than one pin on submodule 'bit_counter'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[2]', 'rollover_val[1]'', 'rollover_val[0]'.
+Warning: In design 'usb_tx_wrapper', the same net is connected to more than one pin on submodule 'fsm'. (LINT-33)
+   Net 'pidbyte[2]' is connected to pins 'pidbyte[2]', 'pidbyte[1]''.
+Warning: In design 'usb_rx', the same net is connected to more than one pin on submodule 'BYTE_COUNTS'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[2]', 'rollover_val[1]'', 'rollover_val[0]'.
+Warning: In design 'usb_rx', the same net is connected to more than one pin on submodule 'FOUR_clk'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[2]', 'rollover_val[0]''.
+Warning: In design 'usb_rx', the same net is connected to more than one pin on submodule 'DIV_COUNT'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[7]', 'rollover_val[6]'', 'rollover_val[4]', 'rollover_val[1]'.
+Warning: In design 'usb_rx', the same net is connected to more than one pin on submodule 'DIV_COUNT'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'rollover_val[5]', 'rollover_val[3]'', 'rollover_val[2]', 'rollover_val[0]'.
+Warning: In design 'clk_div', the same net is connected to more than one pin on submodule 'counter8'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[2]', 'rollover_val[1]'', 'rollover_val[0]'.
+Warning: In design 'clk_div', the same net is connected to more than one pin on submodule 'counter3'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'rollover_val[1]', 'rollover_val[0]''.
+Warning: In design 'clk_div_rx', the same net is connected to more than one pin on submodule 'counter8'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'rollover_val[2]', 'rollover_val[1]'', 'rollover_val[0]'.
+Warning: In design 'clk_div_rx', the same net is connected to more than one pin on submodule 'counter3'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'rollover_val[1]', 'rollover_val[0]''.
+
+Memory usage for this session 183 Mbytes.
+Memory usage for this session including child processes 183 Mbytes.
+CPU usage for this session 12 seconds ( 0.00 hours ).
+Elapsed time for this session 13 seconds ( 0.00 hours ).
+
+Thank you...
