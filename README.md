@@ -1,13 +1,11 @@
-
-
 ## Project Description:
 A modified version of USB 1.1, utilizing a transmitter, a receiver, AHB lite bus, and a 64 bytes data buffer.<br/>
 ![TopLevelRTL](/images/Top_Level_RTL.png/)
 
 ## Contribution:
-+ [Khoi Anh Nguyen](https://github.com/K0iNguyen)
-+ [Aidan Michael McDonough](https://github.com/amcdonough11)
-+ [Moe Wai Yan Myint](https://github.com/mwym2003)
++ [Khoi Anh Nguyen](https://github.com/K0iNguyen) -> usb_tx and data buffer
++ [Aidan Michael McDonough](https://github.com/amcdonough11) -> ahb_lite_satellite
++ [Moe Wai Yan Myint](https://github.com/mwym2003) -> usb_rx
 
 ### + RTL Files:
 The main components making the top level are [usb_tx_wrapper.sv](/source/usb_tx_wrapper.sv), [usb_rx.sv](/source/usb_rx.sv), [data_buffer.sv](/source/data_buffer.sv), and [ahb_lite_satellite.sv](/source/ahb_lite_satellite.sv).</br>
